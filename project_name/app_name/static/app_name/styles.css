@@ -1,10 +1,102 @@
-/* styles.css */
-body {
-    background: linear-gradient(to bottom, #431c53, #805185);
-    color: #fff;
-    font-family: Arial, sans-serif;
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #431c53, #805185);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Card Styling */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.adult-hypnosis {
+    background-color: #d9a8ff;
+}
+
+.children-hypnosis {
+    background-color: #a8c8ff;
+}
+
+.solfeggio-music {
+    background-color: #ffd0a8;
+}
+
+.card img, .card .icon {
+    width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
+}
+
+.footer-item {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-item .icon {
+    font-size: 20px;
+}
+
+.footer-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-item a:hover {
+    color: #6b6b6b;
+}
+
+/* Form Container Styling */
 .form-container {
     max-width: 400px;
     margin: 100px auto;
@@ -47,4 +139,60 @@ body {
     display: block;
     text-align: center;
     margin-top: 10px;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-center {
+    flex: 2;
+    text-align: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #431c53;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #431c53;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ff5e7d;
+}
+
+/* Ensuring right-side login/logout/signup are aligned correctly */
+.navbar-right .nav-item {
+    margin-left: 15px;
 }

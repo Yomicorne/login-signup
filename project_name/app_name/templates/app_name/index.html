@@ -1,5 +1,48 @@
 {% extends "app_name/layout.html" %}
 
 {% block body %}
-    TODO
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Addiction App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Sugar Addiction</h1>
+
+        <div class="card-container">
+            <div class="card adult-hypnosis">
+                <img src="https://via.placeholder.com/100x100?text=Adults" alt="Adults Hypnosis">
+                <span>Adult Hypnosis</span>
+            </div>
+            <div class="card children-hypnosis">
+                <img src="https://via.placeholder.com/100x100?text=Children" alt="Children Hypnosis">
+                <span>Children Hypnosis</span>
+            </div>
+            <div class="card solfeggio-music">
+                <img src="https://via.placeholder.com/100x100?text=Music" alt="Solfeggio Music">
+                <span>Solfeggio Music</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-item">
+            <a href="#home">
+                <span class="icon">🏠</span>
+                <div>Home</div>
+            </a>
+        </div>
+        <div class="footer-item">
+            <a href="#account">
+                <span class="icon">👤</span>
+                <div>Account</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
 {% endblock %}
