@@ -1,6 +1,28 @@
 {% extends "app_name/layout.html" %}
 
 {% block body %}
+<div class="form-container">
+    <h2>Register</h2>
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+    <form action="{% url 'register' %}" method="post">
+        {% csrf_token %}
+        <input autofocus type="text" name="username" placeholder="Username">
+        <input type="email" name="email" placeholder="Email Address">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="confirmation" placeholder="Confirm Password">
+        <input type="submit" value="Register">
+    </form>
+    <a href="{% url 'login' %}">Already have an account? Log In here.</a>
+</div>
+{% endblock %}
+
+
+
+<!-- {% extends "app_name/layout.html" %}
+
+{% block body %}
 
     <h2>Register</h2>
 
@@ -27,4 +49,4 @@
 
     Already have an account? <a href="{% url 'login' %}">Log In here.</a>
 
-{% endblock %}
+{% endblock %} -->
